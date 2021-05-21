@@ -1,0 +1,11 @@
+import {Title} from '@angular/platform/browser'
+
+@Component({
+    viewProviders: [Title]
+})
+
+export class MyPageComponent{
+    constructor(title: Title){
+        title.setTitle(':: My Fancy Title ::')
+    }
+}
