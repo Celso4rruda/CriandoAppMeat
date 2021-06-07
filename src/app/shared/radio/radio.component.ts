@@ -8,7 +8,7 @@ import {NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting:forwardRef(()=> RadioComponent),
+      useExisting: forwardRef(()=> RadioComponent),
       multi: true
     }
   ]
@@ -43,6 +43,6 @@ export class RadioComponent implements OnInit, ControlValueAccessor {
 
   }
 
-  registerOnTouched
+  registerOnTouched(){}
 
 }
